@@ -1,0 +1,221 @@
+/* HEADER STYLES */
+header {
+    background-color: #fef6e4;
+    padding: 2rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/* HEADER LOGO */
+.header-logo {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background: url('../images/bkg.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire page */
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 1rem; /* Add padding inside the navigation bar */
+    margin-bottom: 2rem; /* Add spacing below the navigation bar */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f6f9f6;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f0e6ff;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #130f17;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4df5f5;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 1rem 0 0; /* Add spacing above the nav bar */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the navigation items */
+    gap: 9rem; /* Add spacing between navigation items */
+}
+
+.nav-bar li {
+    display: inline; /* Ensure items are inline */
+}
+
+.nav-bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f3f2f4; /* Purple text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1rem; /* Set font size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-bar a:hover {
+    color: #3af4f4; /* Change color to teal on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+/* COLOR ASSOCIATION TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+}
+
+thead {
+    background-color: #444;
+    color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+tr[style] {
+    background: var(--color);
+    color: #fff;
+}
+
+tr[style*="white"] {
+    color: #000;
+}
+
+tr[style*="linear-gradient"] td {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e6a612; /* Light background color */
+    padding: 1.25rem; /* Add padding inside the footer */
+    border-radius: 1rem; /* Rounded corners */
+    margin-top: 2rem; /* Add spacing above the footer */
+    text-align: center; /* Center-align the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Subtle text color */
+}
+
+footer .tagline {
+    font-style: italic; /* Italicize the tagline */
+    color: #663399; /* Purple color for the tagline */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+    nav {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    nav ul,
+    .nav-bar {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    table {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+    header,
+    footer {
+        padding: 0.5rem;
+    }
+    .header-logo {
+        max-width: 100%;
+    }
+    table,
+    th,
+    td {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+    nav ul,
+    .nav-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start; /* Make nav links align left vertically */
+    }
+    nav ul li,
+    .nav-bar li {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li a,
+    .nav-bar a {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,194 @@
+/* Forms Of Chaos Css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 15px auto;
+    padding: 1.25rem;
+    background: url('../images/bkg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    border: 1px solid rgb(240, 140, 17);
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: rgba(18, 15, 15, 0.314); /* Transparent white */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center align header content */
+}
+
+header .logo {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #f3f1f5;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: rgba(14, 13, 13, 0.2); /* Transparent black */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f3f5;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #b8f308;
+}
+
+/* ===== Main Grid ===== */
+main {
+    float: left;
+    width: 66%;
+    padding: 1rem;
+    border-right: 2px solid #ef9c00;
+    max-width: 900px;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.grid-item {
+    background-color: rgba(21, 19, 19, 0.163); /* Transparent white */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(233, 228, 228, 0.734);
+}
+
+.grid-item h2 {
+    margin-top: 0;
+    color: #fdfcfe;
+    text-align: center;
+}
+
+.grid-item ul {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item ul li,
+.grid-item p {
+    margin-bottom: 0.75rem;
+    color: #e4dfdf;
+}
+
+.grid-item p {
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* ===== Aside ===== */
+aside {
+    float: right;
+    width: 33%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border-left: 2px solid #ef9c00;
+}
+
+/* center the image in the sidebar */
+.fOFc-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+    color: white;
+    border-radius: 0.5rem;
+}
+
+footer .tagline {
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    main {
+        width: 100%;
+        float: none;
+        border-right: none;
+        max-width: 100%;
+    }
+    aside {
+        width: 100%;
+        float: none;
+        border-left: none;
+        margin-top: 1rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    main, aside {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    header, footer {
+        padding: 0.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start; /* Make nav links align left vertically */
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+}

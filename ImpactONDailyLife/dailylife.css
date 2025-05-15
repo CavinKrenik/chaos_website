@@ -1,0 +1,347 @@
+/* Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url("../images/cha.png") no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #f2f0f0; /* Default text color */
+    line-height: 1.7;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    color: #f2f0f4;
+    margin-bottom: 1rem;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Header Content */
+.header-content {
+    flex: 1; /* Allow the content to take up the remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.header-content .logo {
+    width: 100%;
+    max-width: 200px; /* Limit the size of the logo */
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    color: #030205;
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 1rem; /* Add padding inside the navigation bar */
+    margin-bottom: 2rem; /* Add spacing below the navigation bar */
+    border-radius: 0.5rem; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f6f9f6;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f0e6ff;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f7f6f8;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4df5f5;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 1rem 0 0; /* Add spacing above the nav bar */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the navigation items */
+    gap: 9rem; /* Add spacing between navigation items */
+}
+
+.nav-bar li {
+    display: inline; /* Ensure items are inline */
+}
+
+.nav-bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f3f2f4; /* Purple text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1rem; /* Set font size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-bar a:hover {
+    color: #3af4f4; /* Change color to teal on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* SECTION STYLES */
+section {
+    margin-bottom: 3.125rem;
+    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADINGS */
+h2 {
+    color: #f5f2f7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* LISTS */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1.875rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+/* EMAIL LINK */
+.email-link {
+    font-style: italic;
+    color: #fff; /* Set email link color to white */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.email-link:hover {
+    color: #ffcc00; /* Change color on hover for better visibility */
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.25rem; /* Add padding inside the footer */
+    border-radius: 1rem; /* Rounded corners */
+    margin-top: 2rem; /* Add spacing above the footer */
+    text-align: center; /* Center-align the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #f6f3f3; /* Subtle text color */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+footer .tagline {
+    font-style: italic; /* Italicize the tagline */
+    color: #f7f6f7; /* Purple color for the tagline */
+    margin-top: 0.5rem; /* Add spacing above the tagline */
+}
+
+/* Main Container */
+.main-container {
+    display: flex; /* Use flexbox to align the content and image side by side */
+    justify-content: space-between; /* Add space between the content and the image */
+    align-items: flex-start; /* Align items at the top */
+    gap: 1.5rem; /* Add spacing between the content and the image */
+    margin-top: 2rem;
+}
+
+/* Content Box */
+.content-box {
+    flex: 2; /* Allow the content box to take up more space */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    color: #fff; /* Set text color to white */
+}
+
+/* Practical Tips Box */
+.practical-tips-box {
+    flex: 2; /* Allow the content box to take up more space */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Set text color to white */
+}
+
+/* Image Container */
+.image-container {
+    flex: 1; /* Allow the image container to take up less space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+/* Chaos Image */
+.cha-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 900px; /* Increase the maximum width to 3x the original size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Left Align List */
+.left-align-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.left-align-list li {
+    margin-bottom: 1rem;
+    color: #fff; /* Set list item text color to white */
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .main-container {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    .content-box,
+    .practical-tips-box,
+    .image-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .cha-image {
+        max-width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+    header,
+    footer {
+        padding: 0.5rem;
+    }
+    section {
+        padding: 0.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .content-box,
+    .practical-tips-box {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+    nav {
+        padding: 0.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start; /* Optional: align links to the left */
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+}
