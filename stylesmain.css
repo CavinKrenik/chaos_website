@@ -1,26 +1,77 @@
 /* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url('images/bkg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f2dfdf;
+    line-height: 1.7;
+    padding: 1.25rem;
     text-align: center;
-    background-color: #fdfdfd;
+    margin: 0;
 }
 
 /* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
 header h1 {
     font-size: 3rem; /* Large font size for the header */
     margin: 2rem 0;
 }
 
 .header-link {
+    color: #fff;
     text-decoration: none;
-    color: #663399; /* Purple color for the link */
     transition: color 0.3s ease;
 }
 
 .header-link:hover {
-    color: #008080; /* Teal color on hover */
+    text-decoration: underline;
+    color: #b8f308;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #663399;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #008080;
+}
+
+/* Main Content Styles */
+main {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 /* Video Button Styles */
